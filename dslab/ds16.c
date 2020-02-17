@@ -79,7 +79,7 @@ void depthFirstSearch()
     for(i = 0;i < vertexCount;i++)
         lstVertices[i]->visited = false;
 }
-main()
+void main()
 {
     int i, j, n, edges, orgn, destn;
     char ch;

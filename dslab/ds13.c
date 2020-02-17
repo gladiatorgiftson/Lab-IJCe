@@ -1,6 +1,5 @@
 /* AVL Tree */
 #include <stdio.h>
-#include <conio.h>
 #include <malloc.h>
 #include <stdlib.h>
 #define CHANGED 0
@@ -213,12 +212,12 @@ node* insertnode(int data, node *p)
     }
     return(p);
 }
-main()
+void main()
 {
     int data, ch;
     char choice = 'y';
     node *root = NULL;
-    clrscr();
+    system("clear");
     displaymenu();
     while((choice == 'y') || (choice == 'Y'))
     {

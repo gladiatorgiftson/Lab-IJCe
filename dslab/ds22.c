@@ -1,10 +1,10 @@
 /* Merge sort */
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
 void merge(int [],int ,int ,int );
 void part(int [],int ,int );
 int size;
-main()
+void main()
 {
     int i, arr[30];
     printf("Enter total no. of elements : ");
@@ -16,7 +16,6 @@ main()
     printf("\n Merge sorted list : ");
     for(i=0; i<size; i++)
         printf("%d ",arr[i]);
-    getch();
 }
 void part(int arr[], int min, int max)
 {

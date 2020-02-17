@@ -1,10 +1,10 @@
 /* Dijkstra’s Shortest Path */
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
 #define INFINITY 9999
 #define MAX 10
 void dijkstra(int G[MAX][MAX], int n, int startnode);
-main()
+void main()
 {
     int G[MAX][MAX], i, j, n, u;
     printf("Enter no. of vertices: ");

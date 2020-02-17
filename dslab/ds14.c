@@ -37,7 +37,7 @@ int DeleteMin()
     heap[now] = lastElement;
     return minElement;
 }
-main()
+void main()
 {
     int number_of_elements;
     printf("Program to demonstrate Heap:\nEnter the number of number_of_elements:");

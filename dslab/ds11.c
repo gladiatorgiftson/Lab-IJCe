@@ -50,7 +50,7 @@ void inorder(node *t)
         inorder(t->right);
     }
 }
-main()
+void main()
 {
     node *root = NULL;
     int digit;
@@ -67,5 +67,4 @@ main()
     inorder(root);
     printf("\nThe postorder traversal of tree is:\n");
     postorder(root);
-    getch();
 }

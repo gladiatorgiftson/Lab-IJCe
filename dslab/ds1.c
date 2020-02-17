@@ -1,6 +1,6 @@
 /* Stack Operation using Arrays */
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
 #define max 5
 static int stack[max];
 int top = -1;
@@ -27,10 +27,10 @@ void view()
         printf("\n");
     }
 }
-main()
+void main()
 {
     int ch=0, val;
-    clrscr();
+    system("clear");
     while(ch != 4)
     {
         printf("\n STACK OPERATION \n");

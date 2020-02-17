@@ -1,20 +1,20 @@
 /* Evaluation of Postfix expression using stack */
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
 struct stack
 {
     int top;
     float a[50];
 }s;
-main()
+void main()
 {
     char pf[50];
     float d1,d2,d3;
     int i;
-    clrscr();
+    system("clear");
     s.top = -1;
     printf("\n\n Enter the postfix expression: ");
-    gets(pf);
+    fgets(pf,20,stdin);
     for(i=0; pf[i]!='\0'; i++)
     {
         switch(pf[i])
@@ -40,7 +40,7 @@ main()
                 d2 = s.a[s.top--];
                 d1 = s.a[s.top--];
                 s.a[++s.top] = d1 - d2;
-                break
+                break;
             case '*':
                 d2 = s.a[s.top--];
                 d1 = s.a[s.top--];
@@ -54,5 +54,4 @@ main()
             }
     }
     printf("\n Expression value is %5.2f", s.a[s.top]);
-    getch();
 }

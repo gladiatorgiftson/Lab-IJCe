@@ -1,10 +1,10 @@
 /* Binary Search on a sorted array */
 #include <stdio.h>
-#include <conio.h>
-main()
+#include <stdlib.h>
+void main()
 {
     int a[50],i, n, upper, lower, mid, val, found;
-    clrscr();
+    system("clear");
     printf("Enter array size : ");
     scanf("%d", &n);
     for(i=0; i<n; i++)
@@ -33,5 +33,4 @@ main()
     }
     if (found == -1)
         printf("Element not found");
-    getch();
 }

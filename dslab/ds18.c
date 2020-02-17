@@ -1,10 +1,10 @@
 /* Linear search on a sorted array */
 #include <stdio.h>
-#include <conio.h>
-main()
+#include <stdlib.h>
+void main()
 {
     int a[50],i, n, val, found;
-    clrscr();
+    system("clear");
     printf("Enter number of elements : ");
     scanf("%d", &n);
     printf("Enter Array Elements : \n");
@@ -24,5 +24,4 @@ main()
     }
     if (found == 0)
     printf("\n Element not found");
-    getch();
 }

@@ -1,6 +1,5 @@
 /* AVL Tree */
 #include <stdio.h>
-#include <malloc.h>
 #include <stdlib.h>
 #define CHANGED 0
 #define BALANCED 1

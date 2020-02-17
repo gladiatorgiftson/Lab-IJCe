@@ -1,14 +1,12 @@
 /* Queue using Single Linked List */
 #include <stdio.h>
-#include <conio.h>
-#include <process.h>
-#include <alloc.h>
+#include <stdlib.h>
 struct node
 {
     int label;
     struct node *next;
 };
-main()
+void main()
 {
     int ch=0;
     int k;

@@ -7,7 +7,7 @@ struct process
     int wtime;
     int ttime;
 } p[10];
-main()
+void main()
 {
     int i,j,k,n,ttur,twat;
     float awat,atur;
@@ -74,4 +74,5 @@ main()
             printf(" ");
         printf("%2d",p[i].ttime);
     }
+    printf("\n");
 }

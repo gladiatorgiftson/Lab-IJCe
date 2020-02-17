@@ -1,10 +1,10 @@
 /* Bubble Sort */
 #include <stdio.h>
-#include <conio.h>
-main()
+#include <stdlib.h>
+void main()
 {
     int a[50],i, j, n, t;
-    clrscr();
+    system("clear");
     printf("Enter number of elements : ");
     scanf("%d", &n);
     printf("Enter Array Elements \n");
@@ -25,5 +25,4 @@ main()
     printf("\n Elements in Sorted order :");
     for(i=0; i<n; i++)
         printf("%d ", a[i]);
-    getch();
 }

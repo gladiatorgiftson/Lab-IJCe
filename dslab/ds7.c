@@ -1,6 +1,6 @@
 /* Conversion of infix to postfix expression */
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
 #include <string.h>
 #define MAX 20
 int top = -1;
@@ -100,13 +100,12 @@ void convertip(char infix[],char postfix[])
 main()
 {
     char infix[20],postfix[20];
-    clrscr();
+    system("clear");
     printf("Enter the valid infix string: ");
-    gets(infix);
+    fgets(infix,20,stdin);
     convertip(infix, postfix);
     printf("The corresponding postfix string is: ");
     puts(postfix);
-    getch();
 }
 void push(char item)
 {

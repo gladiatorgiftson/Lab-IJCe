@@ -1,6 +1,6 @@
 /* Insertion Sort */
 #include <stdio.h>
-main()
+void main()
 {
     int i, j, k, n, temp, a[20], p=0;
     printf("Enter total elements: ");

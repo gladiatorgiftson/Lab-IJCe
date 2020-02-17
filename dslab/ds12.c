@@ -9,7 +9,7 @@ struct node
 };
 struct node *newNode(int item)
 {
-    struct node *temp = (struct node *)malloc(sizeof(structnode));
+    struct node *temp = (struct node *)malloc(sizeof(struct node));
     temp->key = item;
     temp->left = temp->right = NULL;
     return temp;
@@ -69,7 +69,7 @@ struct node* deleteNode(struct node* root, int key)
     }
     return root;
 }
-main()
+void main()
 {
     struct node *root = NULL;
     root = insert(root, 50);

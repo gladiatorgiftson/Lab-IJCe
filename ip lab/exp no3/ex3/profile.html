@@ -1,0 +1,70 @@
+<style>
+    body{
+        background-image: url("images/bgimg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<html>
+    <body>
+        <script type="text/javascript">
+            function validate()
+            {
+                var flag=1;
+                if(document.myform.name.value==""||document.myform.addr.value==""||document.myform.phno.value==""||document.myform.pwd.value=="")
+                    {
+                        alert("Enter al the details");
+                        flag =0;
+                    }
+                var str=document.myform.phno.value;
+                var x = new RegExp("\\d","g");
+                if(!(str.match(x)))
+                    {
+                        if(!(str.length==10))
+                            flag=0;
+                    }
+                var str1=document.myform.id.value;
+                var x1=new RegExp("^[A-Z][a-zA-z]+$","g");
+                if(!(str1.match(x1)))
+                    {
+                        flag=0;
+                        alert("Invalid UserID")
+                    }
+                var str1=document.myform.pwd.value;
+                var x1= new RegExp("^[A-Z][a-zA-Z]+$","G");
+                if(!(str1.match(x1)))
+                    {
+                        flag =0;
+                        alert("Invalid Password");
+                    }
+                if(flag==1)
+                    {
+                        alert("Valid Input");
+                        window.self.location.href="login.html";
+                    }
+                else
+                    {
+                        alert("INVALID INPUT");
+                        document.myform.focus();
+                    }
+            }
+        </script>
+        <form name="myform">
+            <div align="center"> 
+               <pre>
+                   NAME           : <input type="text" name = "name"> <br>
+                   ADDRESS        : <input type="type" name="addr"> <br>
+                   CONTACT NUMBER : <input type="text" name="phno"><br>
+                   LOGIN          : <input type="text" name="id"><br>
+                   PASSWORD       : <input type="password" name="pwd">
+               </pre><br><br>
+                
+            </div>
+            <br><br>
+            <div align="center">
+               <input type="button" value="ok" onClick="validate()">&nbsp;&nbsp;&nbsp;
+               <input type="reset" value="clear">
+            </div>
+        </form>
+    </body>
+</html>

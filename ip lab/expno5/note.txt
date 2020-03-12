@@ -1,3 +1,6 @@
-add the mysql_connector.jar on $catlina_home/lib
+add the mysql_connector.jar on $CATALINA_HOME/lib  where $CATALINA_HOME is tomcat directory eg D:tomcat/lib
 best alternative than build path
 and log into mysql using root otherwise acess will be denied
+use this
+Class.forName("com.mysql.jdbc.Driver"); for mysql_connector 5.xx.xxx
+Class.forName("com.mysql.cj.jdbc.Driver"); for mysql_connector 8.xx.xxx 

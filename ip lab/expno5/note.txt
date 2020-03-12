@@ -1,0 +1,3 @@
+add the mysql_connector.jar on $catlina_home/lib
+best alternative than build path
+and log into mysql using root otherwise acess will be denied

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Info</title>
+</head>
+<body>
+	<script type="text/javascript">
+	function Display()
+	{
+		if(window.XMLHttpRequest)
+		{
+			xmlhttp = new XMLHttpRequest();	
+		}
+		xmlhttp.open("GET","file:///D:\ex8\UserInfo.xml",false);
+		xmlhttp.send();
+		xmlDoc=xmlhttp.responseXML;
+		var x = xmlDoc.getElementsByTagName("person-Details");
+		var key_id = document.getElementById('key').value;
+		for(i=0;i<x.length;i++)
+		{
+			if(key_id.match(x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue))
+				j=i;
+		}
+		document.write("<h3>User Details are...</h3>");
+		document.write("<table border='3'><tr><th>ID</th><th>Name</th><th>City</th><th>Standard</th><th>Marks</th></tr>");
+		document.write("<tr><td>");
+		document.write(x[j].getElementsByTagName("id")[0].childNodes[0].nodeValue);
+		document.write("</td><td>");
+		document.write(x[j].getElementsByTagName("name")[0].childNodes[0].nodeValue);
+		document.write("</td><td>");
+		document.write(x[j].getElementsByTagName("city")[0].childNodes[0].nodeValue);
+		document.write("</td><td>");
+		document.write(x[j].getElementsByTagName("std")[0].childNodes[0].nodeValue);
+		document.write("</td><td>");
+		document.write(x[j].getElementsByTagName("marks")[0].childNodes[0].nodeValue);
+		document.write("</td><td>");
+		document.write("</table>");
+		
+	}
+	</script>
+	<form name='myform'>
+	Enter ID:<input type='text' id='Key'/><br/>
+	<input type="button" value='submit' onclick='Display()'/>
+	</form>
+</body>
+</html>

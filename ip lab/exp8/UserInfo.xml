@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student>
+	<person-Details>
+		<id>101</id>
+		<name>Anand</name>
+		<city>Pune</city>
+		<std>Second</std>
+		<marks>70 percent</marks>
+	</person-Details>
+	<person-Details>
+		<id>102</id>
+		<name>Anuradha</name>
+		<city>Chennai</city>
+		<std>Second</std>
+		<marks>90 percent</marks>
+	</person-Details>
+	<person-Details>
+		<id>103</id>
+		<name>Archana</name>
+		<city>Mumbai</city>
+		<std>Fifth</std>
+		<marks>85 percent</marks>
+	</person-Details>
+	<person-Details>
+		<id>104</id>
+		<name>Robin</name>
+		<city>Navi Mumbai</city>
+		<std>Eight</std>
+		<marks>78 percent</marks>
+	</person-Details>
+	<person-Details>
+		<id>105</id>
+		<name>Kiara</name>
+		<city>Ahamabad</city>
+		<std>Tenth</std>
+		<marks>80 percent</marks>
+	</person-Details>
+	<person-Details>
+		<id>106</id>
+		<name>Rubin</name>
+		<city>Mumbai</city>
+		<std>Nienth</std>
+		<marks>84 percent</marks>
+	</person-Details>
+	<person-Details>
+		<id>107</id>
+		<name>raj</name>
+		<city>kolkata</city>
+		<std>twelveth</std>
+		<marks>97 percent</marks>
+	</person-Details>
+	<person-Details>
+		<id>108</id>
+		<name>Mani</name>
+		<city>Thoothukudi</city>
+		<std>Eleventh</std>
+		<marks>90 percent</marks>
+	</person-Details>
+</student>
